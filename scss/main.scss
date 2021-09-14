@@ -1,0 +1,31 @@
+@import "reset";
+@import "config";
+@import "content"; // Hero part of the card
+@import "price-box"; // Description of the subscription plan
+@import "buttons"; // Buttons at the bottom
+
+:root {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+body {
+  font-family: "Red Hat Display", ns-serif;
+  background-color: $pale-blue;
+  height: 100vh;
+
+  @include flex(column);
+  justify-content: center;
+  align-items: center;
+}
+
+#card {
+  background-color: $white;
+  width: clamp(20.375rem, 33vw, 25.375rem);
+  overflow: hidden;
+  @include round-border;
+
+  #hero {
+    width: 100%;
+  }
+}

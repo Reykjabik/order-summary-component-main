@@ -1,0 +1,18 @@
+#content {
+  padding-block: clamp(2.375rem, 4vw, 2.6875rem);
+  padding-inline: clamp(1.5rem, 3vw, 2.6875rem);
+  text-align: center;
+
+  #title {
+    @include font-size-weight(clamp(1.3125rem, 2vw, 1.5rem), 900);
+    margin: 0 0 0.75rem;
+  }
+
+  #desc {
+    color: $desat-blue;
+    font-size: 0.875rem;
+    padding-inline: 1.5rem;
+    margin-block: 1.25rem;
+    line-height: 1.8;
+  }
+}

@@ -1,0 +1,35 @@
+.btn--pay {
+  display: block;
+  border: none;
+  background-color: $white;
+  width: 100%;
+  padding: 1.125rem;
+  cursor: pointer;
+  font-family: inherit;
+  @include round-border;
+  @include font-size-weight(0.8795rem, 700);
+  background-color: $bright-blue;
+  color: $white;
+  box-shadow: 0 25px 15px -5px $pale-blue;
+
+  &:hover {
+    background-color: lighten($color: $bright-blue, $amount: 10%);
+  }
+}
+
+.cancel {
+  margin: 1.5rem auto 0;
+  text-align: center;
+
+  .btn--cancel {
+    @include font-size-weight(0.8795rem, 700);
+    cursor: pointer;
+    width: 50%;
+    margin: 0 auto;
+    color: $desat-blue;
+
+    &:hover {
+      color: #000;
+    }
+  }
+}

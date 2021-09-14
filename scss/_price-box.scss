@@ -1,0 +1,42 @@
+#price-box {
+  background-color: $very-pale-blue;
+  padding: 1rem;
+  @include round-border;
+  @include flex(row);
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+
+  #note {
+    flex: 0 1 3rem;
+  }
+
+  #price-desc {
+    align-self: center;
+    flex: 1 1 42%;
+    text-align: left;
+    padding-left: 1rem;
+
+    #plan-title {
+      @include font-size-weight(clamp(0.8125rem, 1.75vw, 0.875rem), 700);
+    }
+
+    #price {
+      color: $desat-blue;
+      margin-top: 8px;
+      font-size: 12px;
+    }
+  }
+
+  #change-link {
+    flex: 0 1 5rem;
+    text-align: right;
+    cursor: pointer;
+    color: $bright-blue;
+    @include font-size-weight(clamp(0.75rem, 4vw, 0.8215rem), 700);
+
+    &:hover {
+      color: lighten($color: $bright-blue, $amount: 10%);
+    }
+  }
+}

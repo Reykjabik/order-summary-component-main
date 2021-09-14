@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Font */
+/* Color variables */
+/* Mixins */
+#content {
+  padding-block: clamp(2.375rem, 4vw, 2.6875rem);
+  padding-inline: clamp(1.5rem, 3vw, 2.6875rem);
+  text-align: center;
+}
+
+#content #title {
+  font-size: clamp(1.3125rem, 2vw, 1.5rem);
+  font-weight: 900;
+  margin: 0 0 0.75rem;
+}
+
+#content #desc {
+  color: #7280a7;
+  font-size: 0.875rem;
+  padding-inline: 1.5rem;
+  margin-block: 1.25rem;
+  line-height: 1.8;
+}
+
+#price-box {
+  background-color: #f5f7ff;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+#price-box #note {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 3rem;
+          flex: 0 1 3rem;
+}
+
+#price-box #price-desc {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 42%;
+          flex: 1 1 42%;
+  text-align: left;
+  padding-left: 1rem;
+}
+
+#price-box #price-desc #plan-title {
+  font-size: clamp(0.8125rem, 1.75vw, 0.875rem);
+  font-weight: 700;
+}
+
+#price-box #price-desc #price {
+  color: #7280a7;
+  margin-top: 8px;
+  font-size: 12px;
+}
+
+#price-box #change-link {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 5rem;
+          flex: 0 1 5rem;
+  text-align: right;
+  cursor: pointer;
+  color: #3829e0;
+  font-size: clamp(0.75rem, 4vw, 0.8215rem);
+  font-weight: 700;
+}
+
+#price-box #change-link:hover {
+  color: #6255e7;
+}
+
+.btn--pay {
+  display: block;
+  border: none;
+  background-color: #fff;
+  width: 100%;
+  padding: 1.125rem;
+  cursor: pointer;
+  font-family: inherit;
+  border-radius: 1rem;
+  font-size: 0.8795rem;
+  font-weight: 700;
+  background-color: #3829e0;
+  color: #fff;
+  -webkit-box-shadow: 0 25px 15px -5px #e0e8ff;
+          box-shadow: 0 25px 15px -5px #e0e8ff;
+}
+
+.btn--pay:hover {
+  background-color: #6255e7;
+}
+
+.cancel {
+  margin: 1.5rem auto 0;
+  text-align: center;
+}
+
+.cancel .btn--cancel {
+  font-size: 0.8795rem;
+  font-weight: 700;
+  cursor: pointer;
+  width: 50%;
+  margin: 0 auto;
+  color: #7280a7;
+}
+
+.cancel .btn--cancel:hover {
+  color: #000;
+}
+
+:root {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 100%;
+}
+
+body {
+  font-family: "Red Hat Display", ns-serif;
+  background-color: #e0e8ff;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#card {
+  background-color: #fff;
+  width: clamp(20.375rem, 33vw, 25.375rem);
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+#card #hero {
+  width: 100%;
+}
+/*# sourceMappingURL=main.css.map */
