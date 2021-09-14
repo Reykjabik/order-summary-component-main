@@ -3,6 +3,7 @@
 @import "content"; // Hero part of the card
 @import "price-box"; // Description of the subscription plan
 @import "buttons"; // Buttons at the bottom
+@import "attribution";
 
 :root {
   box-sizing: border-box;
@@ -13,6 +14,7 @@ body {
   font-family: "Red Hat Display", ns-serif;
   background-color: $pale-blue;
   height: 100vh;
+  width: 100vw;
   position: relative;
   @include flex(column);
   justify-content: center;
@@ -24,12 +26,13 @@ body {
     top: 0;
     left: 0;
     background: url(../images/pattern-background-mobile.svg) no-repeat top;
-    width: 100%;
+    width: 100vw;
     height: 100%;
     z-index: -1;
 
     @media (min-width: 376px) {
-      background: url(../images/pattern-background-desktop.svg) no-repeat top;
+      background: url(../images/pattern-background-desktop.svg) no-repeat
+        top/100%;
     }
   }
 }
